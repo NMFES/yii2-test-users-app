@@ -8,7 +8,6 @@ For installing you should run next commands:
 * `cd yii2-test-users-app`
 * `composer install`
 * `php yii migrate`
-* `php yii fixture/load "*"`
 * Also you need to configure your DB connection in configs/db.php (and create selected DB, ofc)
 
 ## What's included
