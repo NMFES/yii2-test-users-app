@@ -8,7 +8,10 @@ For installing you should run next commands:
 * `cd yii2-test-users-app`
 * `composer install`
 * `php yii migrate`
-* Also you need to configure your DB connection in configs/db.php (and create selected DB, ofc)
+* `php yii fixture/load "*" (if needed)`
+* Also you need to configure your DB connection in configs/db.php and configs/test_db.php (and create selected DB, ofc)
+* For testing you can use next command:
+* `vendor/bin/codecept run`
 
 ## What's included
 
@@ -20,3 +23,4 @@ For installing you should run next commands:
 <img src="https://raw.githubusercontent.com/NMFES/yii2-test-users-app/master/web/img/1.png" height="500">
 <img src="https://raw.githubusercontent.com/NMFES/yii2-test-users-app/master/web/img/2.png" height="500">
 <img src="https://raw.githubusercontent.com/NMFES/yii2-test-users-app/master/web/img/3.png" height="500">
+<img src="https://raw.githubusercontent.com/NMFES/yii2-test-users-app/master/web/img/4.png" height="500">
