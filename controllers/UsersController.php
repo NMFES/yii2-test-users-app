@@ -103,6 +103,8 @@ class UsersController extends \yii\web\Controller
         $model = new UserTransfers();
 
         if ($model->load(Yii::$app->request->post()) && $model->validate() && $model->transfer()) {
+            Yii::$app->session->setFlash('success', $model->amount . ' has been sent to ' . $model->username);
+
             return $this->refresh();
         }
 

@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\widgets\ActiveForm;
+use Yii;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\UserTransfersSearch */
@@ -16,6 +17,10 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <div class="user-transfers-form">
+
+        <?php if (Yii::$app->session->hasFlash('success')): ?>
+            <div class="alert alert-success"><?= Yii::$app->session->getFlash('success'); ?></div>
+        <?php endif; ?>
 
         <?php $form = ActiveForm::begin(); ?>
 
