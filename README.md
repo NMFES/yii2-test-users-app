@@ -17,4 +17,6 @@ For installing you should run next commands:
 * Creating a new transfer to another user
 * Index page with all users and their balance
 
-<img src="https://raw.githubusercontent.com/NMFES/yii2-test-task/master/web/img/1.png" height="500">
+<img src="https://raw.githubusercontent.com/NMFES/yii2-test-users-app/master/web/img/1.png" height="500">
+<img src="https://raw.githubusercontent.com/NMFES/yii2-test-users-app/master/web/img/2.png" height="500">
+<img src="https://raw.githubusercontent.com/NMFES/yii2-test-users-app/master/web/img/3.png" height="500">
