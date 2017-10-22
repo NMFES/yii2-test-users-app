@@ -13,6 +13,9 @@ For installing you should run next commands:
 * For testing you can use next command:
 * `vendor/bin/codecept run`
 
+## DEMO
+http://yii2-test-users-app.000webhostapp.com/
+
 ## What's included
 
 * Login(registration if needed)/Logout
