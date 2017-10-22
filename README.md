@@ -16,3 +16,5 @@ For installing you should run next commands:
 * List of all user's transfers
 * Creating a new transfer to another user
 * Index page with all users and their balance
+
+<img src="https://raw.githubusercontent.com/NMFES/yii2-test-task/master/web/img/1.png" height="500">
