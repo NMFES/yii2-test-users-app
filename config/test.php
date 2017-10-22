@@ -1,6 +1,7 @@
 <?php
 $params = require(__DIR__ . '/params.php');
 $db = require(__DIR__ . '/test_db.php');
+$web = require(__DIR__ . '/web.php');
 
 /**
  * Application configuration shared by all test types
@@ -21,7 +22,7 @@ return [
             'showScriptName' => true,
         ],
         'user' => [
-            'identityClass' => 'app\models\User',
+            'identityClass' => 'app\models\Users',
         ],        
         'request' => [
             'cookieValidationKey' => 'test',
@@ -32,7 +33,8 @@ return [
                 'domain' => 'localhost',
             ],
             */
-        ],        
+        ],   
+        'urlManager' => $web['components']['urlManager']
     ],
     'params' => $params,
 ];

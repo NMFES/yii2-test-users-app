@@ -58,7 +58,7 @@ class UserTransfers extends \yii\db\ActiveRecord
 
     public function anotherUser($attribute, $params)
     {
-        if (Yii::$app->user->identity->username == $this->$attribute) {
+        if (!Yii::$app->user->isGuest && Yii::$app->user->identity->username == $this->$attribute) {
             $this->addError($attribute, 'You can\'t transfer money to yourself');
         }
     }
