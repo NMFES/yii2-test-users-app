@@ -7,6 +7,7 @@ For installing you should run next commands:
 * `git clone https://github.com/NMFES/yii2-test-users-app.git`
 * `cd yii2-test-users-app`
 * `composer install`
+* `sudo chmod -R 777 runtime web/assets`
 * `php yii migrate`
 * `php yii fixture/load "*" (if needed)`
 * Also you need to configure your DB connection in configs/db.php and configs/test_db.php (and create selected DB, ofc)
